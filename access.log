@@ -3998,3 +3998,7 @@
 ::1 - - [23/Nov/2022:23:11:57 +0000] "POST /api/v1/orders/checkout HTTP/1.1" 500 355 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
 ::1 - - [23/Nov/2022:23:13:35 +0000] "POST /api/v1/orders/checkout HTTP/1.1" 200 267 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
 ::1 - - [24/Nov/2022:22:21:37 +0000] "GET /api/v1/orders HTTP/1.1" - - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [24/Nov/2022:23:00:02 +0000] "GET /api/v1/orders/ij HTTP/1.1" - - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [25/Nov/2022:13:29:33 +0000] "POST /api/v1/users/signUp HTTP/1.1" 409 303 "-" "PostmanRuntime/7.29.2"
+::1 - - [25/Nov/2022:13:30:32 +0000] "POST /api/v1/users/signUp HTTP/1.1" 500 1025 "-" "PostmanRuntime/7.29.2"
+::1 - - [25/Nov/2022:13:38:08 +0000] "POST /api/v1/users/signUp HTTP/1.1" 500 1031 "-" "PostmanRuntime/7.29.2"

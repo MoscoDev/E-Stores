@@ -41,7 +41,7 @@ exports.checkout = CatchAsync(async (req, res, next) => {
   const userID = req.user._id;
   const user = req.user;
   const order = await Order.findOne({ userID });
-  
+
   if (order) {
     let payload = {
       card_number: req.body.card_number,
@@ -79,9 +79,8 @@ exports.checkout = CatchAsync(async (req, res, next) => {
           message: " your payment is successful",
           order,
         });
-        
-         await Cart.deleteMany({_id:order.cartId});
-       
+
+        await Cart.findOneAndDelete(order.cartId);
       }
     }
     return response;
