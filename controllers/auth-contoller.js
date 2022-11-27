@@ -56,6 +56,16 @@ exports.signUp = CatchAsync(async (req, res, next) => {
     passwordConfirm,
     role,
   });
+ 
+  try {
+    
+  } catch (error) {
+     await sendEmail({
+       message: "welcome to shopify",
+       email: email,
+       subject: "welcome to shopify",
+     });
+  }
   createAndSendToken(user, 201, res);
 });
 
